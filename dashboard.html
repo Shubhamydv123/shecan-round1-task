@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Welcome, {{ data.name }}</h1>
+        <p>Referral Code: <strong>{{ data.referral_code }}</strong></p>
+        <p>Total Donations Raised: <strong>₹{{ data.donations }}</strong></p>
+
+        <h3>🎁 Rewards Unlocked</h3>
+        <ul>
+            <li>🌟 Bronze Badge (₹1000+)</li>
+            <li>🏅 Silver Badge (₹5000+)</li>
+            <li>🎖️ Gold Badge (₹10000+)</li>
+        </ul>
+
+        <a href="/leaderboard" class="btn">View Leaderboard</a>
+    </div>
+</body>
+</html>
